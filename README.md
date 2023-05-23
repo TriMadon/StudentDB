@@ -10,4 +10,4 @@ You can test by first deploying the student database with the initial schema via
 docker compose-up
 ```
 
-Then testing the chosen implementation in your chosed IDE (preferably IntelliJ Idea). You can test v2 and v3 with Tomcat, While v1 can be tested by first running the server class then client class as many times as preferred.
+Then testing the chosen implementation in your chosed IDE (preferably IntelliJ Idea). You can test v2 and v3 with Tomcat, While v1 can be tested by first running the server class then running as many instances of client class as you like.
