@@ -3,9 +3,9 @@ Attempts at making a student system, in both console and front-end formats.
 
 StudentDB-v1 is console-based, built with multithreading manually and JDBC.
 
-StudentDB-v2 has an HTML front-end, built with Servlets and jsp.
+StudentDB-v2 has an HTML front-end, built with Servlets, jsp, and JDBC.
 
-StudentDB-v3 also has a front-end, built with Spring and Thymeleaf.
+StudentDB-v3 also has a front-end, built with Spring, Thymeleaf, and JPA.
 
 You can test by first deploying the student database with the initial schema via docker:
 
