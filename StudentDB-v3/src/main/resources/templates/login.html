@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+    <link th:href="@{/login.css}" rel="stylesheet">
+    <link th:href="@{/css/bootstrap.css}" rel="stylesheet">
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div class="Auth-form-container">
+    <form class="Auth-form" th:action="@{/login/auth}" method="post" action="#" th:object="${student}">
+        <div class="Auth-form-content">
+            <h3 class="Auth-form-title"> Log In </h3>
+            <div class="form-group mt-3">
+                <label htmlFor=username> Student ID:</label>
+                <input placeholder="Enter your ID"
+                       type="text"
+                       class="form-control mt-1"
+                       th:name="studentID"/>
+            </div>
+            <div class="form-group mt-3">
+                <label htmlFor=password> Password:</label>
+                <input placeholder="Enter password"
+                       class="form-control mt-1"
+                       type="password"
+                       th:name="password"
+                />
+            </div>
+            <div class="d-grid gap-2 mt-3">
+                <button class="btn btn-primary" type="submit"> Submit </button>
+            </div>
+        </div>
+    </form>
+    <div class="d-grid gap-2 mt-3">
+        <p th:text="${loginFailed}"> </p>
+    </div>
+</div>
+</body>
+</html>

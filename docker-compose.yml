@@ -1,0 +1,17 @@
+version: '3.8'
+  
+   
+services:
+  student-db:
+    image: mysql
+    container_name: student-db
+    volumes:
+      - "./schema.sql:/docker-entrypoint-initdb.d/1.sql"
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: ok
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: StudentSystem
+      MYSQL_USER: student
+      MYSQL_PASSWORD: pass
+    ports: 
+      - "3306:3306"

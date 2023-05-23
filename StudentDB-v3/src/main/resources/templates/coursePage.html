@@ -1,0 +1,32 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+  <link th:href="@{/css/bootstrap.css}" rel="stylesheet">
+  <title>Getting Started: Serving Web Content</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div th:align="center">
+  <p th:text="|Here are the grades for ${courseID}:|" > </p>
+  <Table class="table">
+    <tbody>
+    <tr>
+      <th> Average </th>
+      <td th:text="${avg}"></td>
+    </tr>
+    <tr>
+      <th> Maximum </th>
+      <td th:text="${max}"></td>
+    </tr>
+    <tr>
+      <th> Minimum </th>
+      <td th:text="${min}"></td>
+    </tr>
+    <tr>
+      <th> Median </th>
+      <td th:text="${med}"></td>
+    </tr>
+    </tbody>
+  </Table>
+</div>
+</body>
+</html>

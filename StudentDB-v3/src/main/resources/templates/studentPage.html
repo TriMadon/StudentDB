@@ -1,0 +1,32 @@
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+  <link th:href="@{/css/bootstrap.css}" rel="stylesheet">
+  <title>Getting Started: Serving Web Content</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div th:align="center">
+  <p th:text="|Hello, ${studentWelcome}, here are your courses and grades:|" > </p>
+  <Table class="table">
+      <thead>
+        <tr>
+            <th> Course </th>
+            <th> Grade </th>
+            <th> Details </th>
+        </tr>
+      </thead>
+      <tbody>
+      <th:block th:each="course: ${courses}">
+          <tr>
+              <td th:text="${course.getId()}"></td>
+              <td th:text="${course.getGrade()}"></td>
+              <td> <form th:action="@{/courseAPI/__${course.getId()}__}">
+                  <button type="submit" th:text="${course.getId()}"
+              > </button > </form> </td>
+          </tr>
+      </th:block>
+      </tbody>
+  </Table>
+</div>
+</body>
+</html>

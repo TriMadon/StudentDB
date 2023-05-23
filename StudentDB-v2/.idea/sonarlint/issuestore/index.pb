@@ -1,0 +1,27 @@
+
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+I
+src/main/webapp/login.jsp,8\5\85ee523d01e5e19376db640e846c91bbcb0a1c22
+O
+src/main/webapp/WEB-INF/web.xml,2\e\2e22b6edd746fa3dc40ad7276c87c8d87d72a392
+P
+ src/main/webapp/student-page.jsp,4\5\45549200da6edaf27962040d9377a49ddf4ce79f
+P
+ src/main/webapp/invalidLogin.jsp,7\8\7837a7ed8c1ff3bbc6667fabc67ab3413a8a5c0a
+P
+ src/main/java/model/Student.java,d\1\d17042647ab33d409319e23fbe218d86069c45a4
+O
+src/main/java/model/Course.java,6\a\6a9d14c3dc6f4865bbda080d2dd79f0c211d1869
+R
+"src/main/java/model/CourseDAO.java,e\a\ea5501d7fc3fc66035904bac356810ff4768ba4e
+Z
+*src/main/java/controller/LoginServlet.java,f\8\f85663a443e41121f26de837cb9a54ba917c360d
+[
++src/main/java/controller/CourseServlet.java,4\d\4d2573e1c860f6ac06d7d0fdc32d9d7fd46373b1
+O
+src/main/webapp/course-page.jsp,c\e\ce4392b99a56b5b87d223491ae951a01aa80fd88
+S
+#src/main/java/model/StudentDAO.java,2\d\2d800ef45aaffa0c51e628c74023d2b2436cb5fb
+\
+,src/main/java/controller/StudentServlet.java,c\5\c5e26d9b17fe8d90ea298028d13deb2e940d4864
