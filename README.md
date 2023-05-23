@@ -1,5 +1,6 @@
 # StudentDB
-Attempts at making a student system, in both console and front-end formats
+Attempts at making a student system, in both console and front-end formats.
+
 StudentDB-v1 is console-based, built with multithreading manually and JDBC.
 
 StudentDB-v2 has an HTML front-end, built with Servlets and jsp.
